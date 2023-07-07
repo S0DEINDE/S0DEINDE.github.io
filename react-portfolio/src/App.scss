@@ -1,0 +1,49 @@
+$primary-color: white;
+@import '~loaders.css/src/animations/pacman.scss';
+
+
+@font-face{
+    font-family: 'Milkshake';
+    src: url('./assets/fonts/milkshake.ttf') format('ttf');
+}
+
+@font-face{
+    font-family: 'Vegan Style';
+    src: url('./assets/fonts/veganstyle.ttf') format('ttf');
+}
+
+
+input,
+textearea{
+    font-family:'Milkshake';
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.loader-active{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+

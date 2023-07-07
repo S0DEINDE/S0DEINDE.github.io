@@ -1,0 +1,100 @@
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.contact-form{
+
+  width:200%;
+  margin-top:20px;
+  margin-left: 40%;
+
+  ul{
+    padding: 0;
+    margin: 0;
+
+    li{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode:forwards;
+            
+
+            li.half{
+              width: 49%;
+              margin-left: 2
+            }
+          }
+    }
+    input[type='text'],
+    input[type='email'] {
+
+      width: 100%;
+      border: 0;
+      background: white;
+      height: 50px;
+      font-size: 18px;
+      color: black;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+
+    textarea{
+      width: 100%;
+      border: 0;
+      height: 60px;
+      font-size: 16px;
+      padding: 20px;
+      min-height: 150px;
+      box-sizing: border-box;
+    }
+
+    .flat-button{
+      color: white;
+      background: 0 0;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 5px solid rgb(184, 4, 255);
+      float: right;
+      border-radius: 4px;
+
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+  
+  .contact-page{
+    .text-zone{
+      margin-top: -500px;
+      h1{
+        font-size: 51px;
+      }
+
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+  
+  
+  .contact-form{
+    margin-top: 5px;
+    margin-left: 15px;
+
+  }
+}

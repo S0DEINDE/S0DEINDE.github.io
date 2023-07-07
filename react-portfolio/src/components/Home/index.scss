@@ -1,0 +1,104 @@
+.home-page{
+
+    .fade-in {
+        animation: fade-in-animation 3.5s ease-in forwards;
+    }
+      
+      @keyframes fade-in-animation {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+    }
+    
+    .text-zone{
+        position: absolute;
+        left: 12.5%;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+    
+    h1{
+        color: white;
+        font-size: 45px;
+        margin: 0;
+        font-weight: 400;
+
+        &::before{
+            content: "print()";
+            font-family:'Vegan Style';
+            color: white;
+            font-size: 16px;
+            position: absolute;
+            margin-top: -20px;
+            opacity: 0.6;
+            left: 25px;
+        }
+
+    &::after{
+            content: "System.out.println();";
+            font-family: 'Vegan Style';
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            margin-top:10px;
+            margin-left: 16px;
+            opacity:0.6;
+            animation: fadeIn 1s 1.4s backwards;
+        }
+
+    }
+
+    h2{
+        color: white;
+        margin-top: 20px;
+        font-weight: 1000;
+        font-size: 16px;
+        font-family: 'Milkshake';
+        letter-spacing: 2px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+    .flat-button{
+        color: red;
+        font-size: 13px;
+        font-weight: 1000;
+        letter-spacing: 3px;
+        font-family: 'Milkshake';
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid white;
+        margin-top: 25px;
+        float: left;
+        animation: fadeInAnimation 1s 1.9s backwards;
+        white-space: nowrap;
+
+        &:hover{
+            background: blue;
+            color: black;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .home-page{
+        margin-top: -277px;
+        margin-left: -240px;
+        .text-zone{
+            margin-top: -100px;
+            margin-left: 200px;
+            left: 10%;
+            h1{
+                font-size: 40px;
+            }
+        }
+
+        img{
+            margin-left: 10px;
+            width: 1100px;
+        }
+    }
+}
