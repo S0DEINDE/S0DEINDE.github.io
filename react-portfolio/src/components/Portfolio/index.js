@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
-import Resume from '../../assets/images/Off_Resume.pdf';
+import Resume from '../../assets/images/Off_Resumey.pdf';
 import './index.scss';
 import SkillSphere from './TextSphere.js';
 
